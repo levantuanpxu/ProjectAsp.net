@@ -13,8 +13,7 @@ Ngôn ngữ lập trình : C#
 + Microsoft.EntityFrameworkCore.SqlServer
 + Microsoft.EntityFrameworkCore.Tools
 + Microsoft.Extensions.Configuration.FileExtensions
-<br>
-<br>
+
 Chức năng : thêm , sửa, xóa ...
 <br>
 + Quản lý Dashboard
