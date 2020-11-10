@@ -1,0 +1,26 @@
+﻿@model Category
+
+<form method="post" asp-action="DeleteCategory">
+    <input asp-for="Id" hidden />
+    <div class="border">
+        <div class="form-group row">
+            <h2 class="text-info">Delete Category</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <p class="text-center">Bạn co chắc là muốn xóa thể loại @Model.CategoryName</p>
+
+                <div class="row form-group">
+                    <div class="col">
+                        <input type="submit" value="Delete" class="btn btn-danger" />
+                    </div>
+                    <div class="col">
+                        <a asp-action="Index" class="btn btn-success">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

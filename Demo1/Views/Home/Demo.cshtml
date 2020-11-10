@@ -1,0 +1,48 @@
+﻿@model HomeIndexVM
+
+<div class="container">
+    <div class="text-center">
+        <button class="btn btn-dark filter-product-btn" data-filter="all">All</button>
+        @foreach (var item in Model.Categories)
+        {
+            <button class="btn btn-dark filter-product-btn" data-filter="@item.CategoryName">@item.CategoryName</button>
+        }
+    </div>
+
+    <div class="row">
+        @foreach (var item in Model.Products)
+        {
+            <div class="col-md-6 pb-4 filter @item.Category.CategoryName">
+                <div class="card bg-white rounded shadow-sm">
+                    <div class="card-body row">
+                        <div class="col-7"><label>@item.Name</label></div>
+                        <div class="col-5"><label>@string.Format("{0:c0}", item.Price)</label></div>
+                    </div>
+                    <img src="@item.ImageUrl" alt="Alternate Text" class="card-img-top img-fluid d-block mx-auto mb-3" />
+                    <div class="card-body row">
+                        <div class="col-12">
+                            <span class="badge w-100" style="background-color: lawngreen">@item.Category.CategoryName</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section ScriptsValidate {
+    <script>
+        $(document).ready(function () {
+            $(".filter-product-btn").click(function () {
+                let value = $(this).attr('data-filter');
+                if (value == "all") {
+                    $(".filter").show('1000');
+                }
+                else {
+                    $(".filter").not('.' + value).hide('3000');
+                    $(".filter").filter('.' + value).show('3000');
+                }
+            })
+        })
+    </script>
+}
