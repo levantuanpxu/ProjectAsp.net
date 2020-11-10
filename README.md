@@ -7,7 +7,7 @@ Ngôn ngữ lập trình : C#
 + Visual Studio Community/Professional (2019)
 + .NET Core 3.1 SDK
 + SQL Server 2019 
-<br>
+
 <b>Installed Packages</b>
 <br>
 + Microsoft.EntityFrameworkCore.SqlServer
