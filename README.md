@@ -8,7 +8,6 @@ Ngôn ngữ lập trình : C#
 + .NET Core 3.1 SDK
 + SQL Server 2019 
 <br>
-<br>
 <b>Installed Packages</b>
 <br>
 + Microsoft.EntityFrameworkCore.SqlServer
