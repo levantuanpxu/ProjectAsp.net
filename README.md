@@ -24,4 +24,5 @@ Chức năng : thêm , sửa, xóa ...
 <br>
 <br>
 Database:
-![image](https://user-images.githubusercontent.com/70925631/98758591-b7136180-2401-11eb-9d01-ea46f235886d.png)
+<br>
+![image](https://user-images.githubusercontent.com/70925631/98758648-df02c500-2401-11eb-87d2-11bfc2b89a48.png)
